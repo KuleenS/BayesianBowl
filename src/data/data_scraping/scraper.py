@@ -92,7 +92,7 @@ def worker_process(queue, work_queue, configurer):
                 tournament_id, packets, headers, rounds_scores, individuals
             )
 
-            with open(f"data/tournament_{tournament_id}.pickle", "wb") as f:
+            with open(f"raw_data/tournament_{tournament_id}.pickle", "wb") as f:
                 pickle.dump(tournament_class, f)
 
             logger.info(f"Ending scraping {tournament}")
@@ -256,8 +256,6 @@ def extract_scores(tournament):
 
 
 def main():
-    # create an aiohttp session and pass it to each function execution
-
     total_tournaments = []
 
     for i in tqdm(range(1996, 2024)):
@@ -274,7 +272,7 @@ def main():
         total_tournaments.extend(tournament_stats)
 
     gotten_files = [
-        x.split("_")[-1].replace(".pickle", "") for x in os.listdir("data/")
+        x.split("_")[-1].replace(".pickle", "") for x in os.listdir("raw_data/")
     ]
 
     print(len(total_tournaments))
