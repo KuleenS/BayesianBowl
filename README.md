@@ -2,12 +2,17 @@
 
 ## Setup 
 1. Download [conda](https://www.anaconda.com/download/)/[miniconda](https://docs.conda.io/projects/miniconda/en/latest/) 
-2. Download environment packages to create environment called bayes
+2. Have git setup on your computer. You should be able to download it [here](https://git-scm.com/downloads)
+3. Clone the repo
+```
+git clone https://github.com/KuleenS/BayesianBowl.git
+```
+4. Download environment packages to create environment called bayes
 ```
 conda env create -f environment.yml
 ```
-3. Set up a jupyter server either using jupyter notebook or VSCode Jupyter Notebook
-4. Run the code in the folders
+5. Set up a jupyter server either using jupyter notebook or VSCode Jupyter Notebook
+6. Run the code in the folders
 
 
 ## Explanation of code files
