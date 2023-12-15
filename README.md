@@ -18,6 +18,8 @@ Initial file to scrape all the data from the website
 ### src/data/data_cleaning/data_aggregation.ipynb
 Aggregates raw data into csv
 
+Warning: this has manual step. If you do not want to manually align like 10 tournaments. Please just move use the dataset.csv and cleaned_filtered_dataset_nans.csv
+
 ### src/data/data_cleaning/clean.ipynb
 Cleans dataset and standardizes some of the inconsistencies
 
