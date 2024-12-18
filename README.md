@@ -50,3 +50,8 @@ Final version of data
 ## data/graph.csv
 CSV data to input into [cosmograph](https://cosmograph.app/) to visualize graph
 
+# Report and Slides 
+
+Bayesian_Bradley_Terry - slides explaining project at a high level
+Bayesian_Report.pdf - full in depth technical report explaining process and project
+
